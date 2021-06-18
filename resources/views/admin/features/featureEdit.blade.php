@@ -11,7 +11,7 @@
                         @csrf
                         @method('PUT')
 
-                        <h1><b>Modifier les informations du témoignage :</b></h1>
+                        <h1><b>Temoignagess :</b></h1>
             
                         <!-- Icon -->
                         <div class="mt-4">

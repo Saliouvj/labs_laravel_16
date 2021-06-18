@@ -35,4 +35,3 @@
         </div>
     </div>
 </div>
-<!-- Testimonial section end-->
