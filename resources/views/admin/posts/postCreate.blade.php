@@ -10,9 +10,9 @@
                     <form method="POST" action="{{ route('postStore') }}" enctype="multipart/form-data">
                         @csrf
 
-                        <h1><b>Nouvel article :</b></h1>
+                        <h1><b>NOUVEL ARTICLE :</b></h1>
             
-                        <!-- Title -->
+                        <!-- Titre -->
                         <div class="mt-4">
                             <x-label for="title" :value="__('Title')" />
             
@@ -59,6 +59,7 @@
                                 @endforeach
                             </div>
                         </div>
+
             
                         <div class="flex items-center mt-6">
                             <x-button type="submit">

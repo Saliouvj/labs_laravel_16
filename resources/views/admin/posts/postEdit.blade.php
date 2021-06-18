@@ -14,7 +14,7 @@
                         <h1><b>Modifier l'article du témoignage :</b></h1>
 
                         
-                        <!-- Title -->
+                        <!-- Titre -->
                         <div class="mt-4">
                             <x-label for="title" :value="__('Title')" />
             

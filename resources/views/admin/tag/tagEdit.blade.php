@@ -11,7 +11,7 @@
                         @include('layouts.flash')
                     </div>
 
-                    <h1><b>Modifier le tag :</b></h1>
+                    <h1><b>Modifier un tag :</b></h1>
 
                     <form method="POST" action="{{ route('tagUpdate', $tag) }}" enctype="multipart/form-data" class="w-1/3">
                         @csrf
