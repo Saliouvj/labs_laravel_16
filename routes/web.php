@@ -178,7 +178,7 @@ Route::delete('/admin/category/{category}/delete', [CategoryController::class,'d
 Route::get('/admin/footer/{footer}/edit', [FooterController::class, 'edit'])->middleware(['admin'])->name('footerEdit');
 Route::put('/admin/footer/{footer}/update', [FooterController::class, 'update'])->middleware(['admin'])->name('footerUpdate');
 
-// ___________________________________ DASHBOARD *
+// ___________________________DASHBOARD___________________________ *
 
 Route::get('/dashboard', function () {
     $users = User::all();

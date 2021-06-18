@@ -1,15 +1,5 @@
 <nav class="flex flex-col bg-green-900 w-64 max-h-full px-4 tex-gray-900">
 
-    <!-- USER Name + Photo -->
-    {{-- <div class="mt-8">
-        <div class="flex justify-center mx-8">
-            <img src="{{ asset('img/'. Auth::user()->photo) }}" class="mx-auto h-25 border-4 border-green-500"/>
-        </div>
-        <div class="flex justify-center mt-2">
-            <span class="font-semibold text-white">{{ Auth::user()->name }} {{ Auth::user()->firstname }}</span>       
-        </div>
-    </div> --}}
-
     <!-- LOG OUT -->
     <div class="flex justify-center">
         <form method="POST" action="{{ route('logout') }}" class="mt-2">
