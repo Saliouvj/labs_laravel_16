@@ -7,6 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
+
 class WelcomeSender extends Mailable
 {
     use Queueable, SerializesModels;
@@ -20,6 +21,7 @@ class WelcomeSender extends Mailable
     {
         $this->mail = $request;
     }
+
 
     /**
      * Build the message.

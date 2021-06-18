@@ -28,6 +28,6 @@ class NewPostSender extends Mailable
      */
     public function build()
     {
-        return $this->from('saliou@labs.com')->markdown('mail.newpost')->subject('Nouvel article en ligne !');
+        return $this->from('saliou@labs.com ')->markdown('mail.newpost')->subject('Nouvel article en ligne, savourez !');
     }
 }

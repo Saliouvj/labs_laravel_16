@@ -28,6 +28,6 @@ class ValidateUserSender extends Mailable
      */
     public function build()
     {
-        return $this->from('saliou@labs.com')->markdown('mail.validate-user')->subject('Compte validé');
+        return $this->from('saliou@labs.com')->markdown('mail.validate-user')->subject('Compte validé !');
     }
 }
