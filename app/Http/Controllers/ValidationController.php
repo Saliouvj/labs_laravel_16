@@ -25,6 +25,7 @@ class ValidationController extends Controller
         $articles = Post::where('validate', 0)->where('trash', 0)->get();
         $users = User::where('validate', 0)->get();
         // $articles = Article::all();
+        
         return view('admin.pages.validate', compact('roles','commentaires','articles', 'users'));
     }
 
