@@ -21,7 +21,6 @@
     </nav>
 </header>
 <!-- Header section end -->
-
 @include('partial.intro')
 @include('partial.about')
 @include('partial.testimonial')
