@@ -107,7 +107,7 @@ Route::get('/admin/service/{service}/edit', [ServiceController::class, 'edit'])-
 Route::put('/admin/service/{service}/update', [ServiceController::class, 'update'])->middleware(['admin'])->name('serviceUpdate');
 Route::delete('/admin/service/{service}/delete', [ServiceController::class,'destroy'])->middleware(['admin'])->name('serviceDestroy');
 
-// Titles
+// Titres
 
 Route::get('/admin/title/{title}/edit', [TitleController::class, 'edit'])->middleware(['admin'])->name('titleEdit');
 Route::put('/admin/title/{title}/update', [TitleController::class, 'update'])->middleware(['admin'])->name('titleUpdate');
@@ -126,7 +126,7 @@ Route::put('/admin/video/{video}/update', [VideoController::class, 'update'])->m
 
 Route::put('/admin/bigtitle/{bigtitle}/update', [BigTitleController::class, 'update'])->middleware(['admin'])->name('bigtitleUpdate');
 
-// Testimonials
+// Testi
 
 Route::get('/admin/testimonial/create', [TestimonialController::class, 'create'])->middleware(['admin'])->name('testimonialCreate');
 Route::post('/admin/testimonial/store', [TestimonialController::class, 'store'])->middleware(['admin'])->name('testimonialStore');
@@ -139,7 +139,7 @@ Route::delete('/admin/testimonial/{testimonial}/delete', [TestimonialController:
 Route::get('/admin/contact/{contact}/edit', [ContactController::class, 'edit'])->middleware(['admin'])->name('contactEdit');
 Route::put('/admin/contact/{contact}/update', [ContactController::class, 'update'])->middleware(['admin'])->name('contactUpdate');
 
-// Articles blog
+// Articles de blog
 
 Route::get('/admin/post/create', [PostController::class, 'create'])->middleware(['writer'])->name('postCreate');
 Route::post('/admin/post/store', [PostController::class, 'store'])->middleware(['writer'])->name('postStore');
@@ -287,7 +287,7 @@ Route::post('/blog/article/{id}/comment', [CommentController::class, "store"])->
 
 // Valider un commentaire
 Route::put('/admin/validation/update/{id}', [CommentController::class, 'update'])->middleware(['webmaster'])->name('commentUpdate');
-// Supprimer un commentaire non-validé
+// Supprimer un commentaire 
 Route::delete('/admin/validate/comment/{id}/delete', [ValidationController::class,'deleteComment'])->middleware(['webmaster'])->name('validateDeleteComment');
 
 // Dashboard - USERS ROLES
